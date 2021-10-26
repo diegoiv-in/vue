@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Barras Praderas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/6.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/105eae56a8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/gim.css">
+    <link rel="icon" href="../img/vue.png">
+</head>
+<body>
+    <h1 id="letrero"> Las Barras Pradera </h1>
+   
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <article id="barrasPradera" class="contenedor">
+        
+        <table cla  id="formulario">
+            <tr>
+                <th>Cantidad</th>
+                <th>Articulo</th>
+                <th>Costo Unitario</th>
+                <th>Costo Total/Articulo</th>
+            </tr>
+            <tr v-for="item in articulos">
+                <td><input type="number" style="font-size: black;" v-model="item.cant" ></td>
+                <td><input type="text" v-model="item.nombre"></td>
+                <td><input type="number" v-model="item.precio_unit"></td>
+                <td>${{calculoPrecioItems(item)}}</td>
+            </tr>
+        </table>
+        <br>
+        
+        <p style="bottom: 5%;"><button style="bottom: 10%;" @click="agregarArt()" class="btn btn-dark">Añadir Articulo</button></p>
+        <div  style="font: black;  bottom:  20%;" id="formulario1" s > 
+            <h6  class="text-black">Subtotal: ${{Subtotal}}</h6 >
+            <h6 class="text-black">Iva: ${{Iva}}</h6>
+            <h6 class="text-black">Total: ${{TotalPrecio}}</h6>
+        </div>
+    </article>
+
+   <script src="js/gimnasio.js"></script>   
+</body>
+</html>

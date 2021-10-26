@@ -1,0 +1,43 @@
+
+#formulario{
+   margin-left: 20%;
+    background-color: white;
+   
+    max-width: 400px;
+
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(13, 112, 4, 0.753);
+    
+    
+}
+ body{
+     background-image: url(../c520f27ea14d7925bf4c5cc9f8fdc1dc.jpg);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+ }
+
+#formulario1{
+    background-color: white;
+    width: 100%;
+    max-width: 200px;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(13, 112, 4, 0.753);
+    margin-right: 500px;
+    margin-left: 58%;
+   
+}
+button{
+    margin-left: 20%;
+}
+#letrero{
+    margin-left: 24%;
+    font-size: 70px;
+    font-family: 'Rampart One', cursive;
+    color: white;
+}
+
+
+
+
+
